@@ -1,0 +1,18 @@
+4 BYTE INT: signed integer range between −2,147,483,648 and 2,147,483,647
+
+int a = 2,147,483,647, b= 2;            b = 1;
+int c = a + b = −2,147,483,647       −2,147,483,648
+
+unsigned char 255 + 1 = 0       (0 -  255)
+
+How to detect:
+int addOvf(int* result, int a, int b) 
+{ 
+	if( a > INT_MAX - b ) 
+		return -1; // overflow
+	else
+	{ 
+		*result = a + b; 
+		return 0; 
+	} 
+}
