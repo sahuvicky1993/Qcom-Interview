@@ -9,3 +9,5 @@ int main()
 
     return 0;
 }
+
+//printf("%d",*((int*)v));
